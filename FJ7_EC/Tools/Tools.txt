@@ -1,0 +1,7 @@
+[NMake]     - Program maintenance utility (V1.50)
+Check.exe   - Check Sum Read (V1.0) for Windows
+FU.exe      - Firmware Utility (V1.0.0) for Windows 32/64 bit
+Hex2bin.EXE - Convert HEX to BIN file (V1.0.4)
+IFU.EXE     - ITE EC Flash Utility (V1.1.2)
+IU.EXE      - ITE EC General Utility (V1.0.0)
+WinIFU.exe  - ITE EC Flash Utility (V1.1.3.5) for Windows 32/64 bit
