@@ -64,7 +64,7 @@ extern XBYTE	SPIBuffer[256];	// _at_ 0x0200	(byte) 256 bytes SPI read/write buff
 //extern XBYTE					// _at_ 0x0306	(byte)
 //extern XBYTE					// _at_ 0x0307	(byte)
 //extern XBYTE					// _at_ 0x0308	(byte)
-//extern XBYTE					// _at_ 0x0309	(byte)
+extern XBYTE	BIOS_QE;		// _at_ 0x0309	(byte)
 //extern XBYTE					// _at_ 0x030A	(byte)
 //extern XBYTE					// _at_ 0x030B	(byte)
 //extern XBYTE					// _at_ 0x030C	(byte)

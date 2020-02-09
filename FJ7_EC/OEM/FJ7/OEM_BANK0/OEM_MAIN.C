@@ -3597,6 +3597,19 @@ void Service_T50mSEC(void)
 void Service_T100mSEC0(void)
 {
 	CopyRAM2OEMBIOSaccess();
+	
+	if (BIOS_QE != 0)
+	{
+		if (IsFlag1(POWER_FLAG, ACPI_OS))
+		{
+			ECQEvent(BIOS_QE, SCIMode_Normal);
+		}
+		else
+		{
+			ECSMIEvent(BIOS_QE);
+		}
+		BIOS_QE = 0;
+	}
 
 	#ifdef	Setting_MAX8742ETI_Support
 	Setting_MAX8742ETI();

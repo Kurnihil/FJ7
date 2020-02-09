@@ -64,7 +64,7 @@ XBYTE	SPIBuffer[256]			_at_ 0x0200;	// (byte) 256 bytes SPI read/write buffer
 //XBYTE							_at_ 0x0306;	// (byte)
 //XBYTE							_at_ 0x0307;	// (byte)
 //XBYTE							_at_ 0x0308;	// (byte)
-//XBYTE							_at_ 0x0309;	// (byte)
+XBYTE	BIOS_QE					_at_ 0x0309;	// (byte)
 //XBYTE							_at_ 0x030A;	// (byte)
 //XBYTE							_at_ 0x030B;	// (byte)
 //XBYTE							_at_ 0x030C;	// (byte)

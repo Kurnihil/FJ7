@@ -13,8 +13,8 @@
 //------------------------------------------------------------------------------
 //                           0123456789ABCDEF   // 16th (F) for '\0' of string
 const BYTE code P_model[] = "FJ7           #";  // Project information
-const BYTE code P_date[]  = "2018/01/31b00 #";  // Latest modified date         // yyyy/MM/ddbXX (bXX for build count)
-const BYTE code P_rev[]   = "0.00T#";           // Project revision             // ' ': Formal release, 'T': Test build
+const BYTE code P_date[]  = "2018/02/22b00 #";  // Latest modified date         // yyyy/MM/ddbXX (bXX for build count)
+const BYTE code P_rev[]   = "0.02 #";           // Project revision             // ' ': Formal release, 'T': Test build
 const BYTE code P_digit[] = {0, 0};             // Project extended rev
 
 

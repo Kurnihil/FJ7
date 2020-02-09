@@ -74,7 +74,7 @@
 // GPIO Port A Registers Define
 //------------------------------------------------------------------------------
 #define PortA_VOLT	0x00			// GPA[---] (Not supported)					// leox20160105
-#define PortA_GPOT	0x00			// GPA[3-0] (0:Push-pull, 1:Open-drain)		// leox20151231
+#define PortA_GPOT	0x0E			// GPA[3-0] (0:Push-pull, 1:Open-drain)		// leox20151231
 #define PortA_Init	0x0E			// Data of port A	// aka name		//              (FH8A)                  (FH9C)
 #define PortA0_Ctrl	INPUT			// RTC_DET#
 #define PortA1_Ctrl	OUTPUT			// BATLED1#			// BAT_LED1#	// Battery LED1 (Blue)  High/Low Off/On (White)
@@ -146,7 +146,7 @@
 // GPIO Port E Registers Define
 //------------------------------------------------------------------------------
 #define PortE_VOLT	0x00			// GPE[7,6,0] (0:3.3V, 1:1.8V)				// leox20160105
-#define PortE_GPOT	0x00			// GPE[7-0] (0:Push-pull, 1:Open-drain)		// leox20151231
+#define PortE_GPOT	0x80			// GPE[7-0] (0:Push-pull, 1:Open-drain)		// leox20151231
 #define PortE_Init	0x81			// Data of port E	// aka name
 #define PortE0_Ctrl	OUTPUT			// CHG_DISABLE#
 #define PortE1_Ctrl	OUTPUT			// BT_EN			//				// Blue Tooth power source, High/Low On/Off
@@ -162,11 +162,11 @@
 // GPIO Port F Registers Define
 //------------------------------------------------------------------------------
 #define PortF_VOLT	0x00			// GPF[7-2] (0:3.3V, 1:1.8V)				// leox20160105
-#define PortF_GPOT	0x00			// GPF[7-0] (0:Push-pull, 1:Open-drain)		// leox20151231
+#define PortF_GPOT	0x04			// GPF[7-0] (0:Push-pull, 1:Open-drain)		// leox20151231
 #define PortF_Init	0x06			// Data of port F	// aka name
 #define PortF0_Ctrl	INPUT			// KB_ID1
 #define PortF1_Ctrl	OUTPUT			// DLID#			// EC_FPBACK#
-#define PortF2_Ctrl	OUTPUT+mA12_18	// CAPSLED#			//				// CAPS LED, High/Low Off/On (White)
+#define PortF2_Ctrl	OUTPUT			// CAPSLED#			//				// CAPS LED, High/Low Off/On (White)
 #define PortF3_Ctrl	INPUT			// PCH_BLON			// PCH_LVDS_BLON (aka APU_BLON_C)
 #define PortF4_Ctrl	ALT				// TPCLK
 #define PortF5_Ctrl	ALT				// TPDATA
@@ -230,13 +230,13 @@
 // GPIO Port J Registers Define
 //------------------------------------------------------------------------------
 #define PortJ_VOLT	0x00			// GPJ[---] (Not supported)					// leox20160105
-#define PortJ_GPOT	0x00			// GPJ[5-0] (0:Push-pull, 1:Open-drain)		// leox20151231
+#define PortJ_GPOT	0x18			// GPJ[5-0] (0:Push-pull, 1:Open-drain)		// leox20151231
 #define PortJ_Init	0x18			// Data of port J	// aka name
 #define PortJ0_Ctrl	INPUT			// SHDN#			// CHECK
 #define PortJ1_Ctrl	INPUT			// KB_ID0
 #define PortJ2_Ctrl	INPUT			// BAT_PRS#
 #define PortJ3_Ctrl	OUTPUT			// LED_WLAN#		//				// RF LED,  High/Low Off/On (WHite)
-#define PortJ4_Ctrl	OUTPUT+mA12_18	// NUMLED#			//				// NUM LED, High/Low Off/On (WHite)
+#define PortJ4_Ctrl	OUTPUT			// NUMLED#			//				// NUM LED, High/Low Off/On (WHite)
 #define PortJ5_Ctrl	INPUT			// ISH_Notice EC
 #define PortJ6_Ctrl	OUTPUT			// PCH_PWROK		//				// leo_20150429 ????
 #define PortJ7_Ctrl	INPUT			// KB_ID2
